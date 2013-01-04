@@ -6,7 +6,7 @@ class Garelic
 
   @@deployed_version_slot = 5
 
-  cattr_accessor :deployed_version, :deployed_version_slot, instance_accessor: false
+  cattr_accessor :deployed_version, :deployed_version_slot, :instance_accessor => false
 
   def self.monitoring(profile_id)
     buffer = <<-HTML
